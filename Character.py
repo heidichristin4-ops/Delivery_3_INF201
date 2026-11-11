@@ -2,7 +2,7 @@
 class Character:
     """Represents a character in the RPG"""
 
-    def __init__(self, name: str, hp_max: int = 100, damage: int = 10) -> None:
+    def __init__(self, name: str, hp_max: int = 100, damage: int = 10, weapon=None) -> None:
         """
         Initialise the Character
 
@@ -15,11 +15,16 @@ class Character:
         self._hp = hp_max  # Note: _hp indicates protected attribute
         self.hp_max = hp_max
         self.damage = damage
+        self.weapon = weapon # Optional weapon attribute
 
     def attack(self, target) -> None:
         """Attack and deal damage to target character"""
-        # CHANGED, Use take_damage() instead of  target._hp directly
-        target.take_damage(self.damage)
+        if self.weapon is not None:
+            damage = self.weapon.roll_damage()
+        else:
+            damage = self.damage
+        
+        target.take_damage(damage)
 
     # ADDED, Method to reduce the character HP
     def take_damage(self, damage: int) -> None:

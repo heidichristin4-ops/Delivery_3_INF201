@@ -1,0 +1,7 @@
+* 0ae61f1 - Heidi Christin Elvenes, 64 seconds ago : Add requirements file
+* 6c587a4 - Heidi Christin Elvenes, 65 minutes ago : Update Task 3 and add Battle class
+* ea57655 - Heidi Christin Elvenes, 29 hours ago : Task 3, add weapons
+*   fa646b4 - Heidi Christin Elvenes, 2 days ago : Original files
+|\  
+| * 728a14c - heidichristin4-ops, 2 days ago : Initial commit
+* d658f83 - Heidi Christin Elvenes, 2 days ago : Initial commit - project files
